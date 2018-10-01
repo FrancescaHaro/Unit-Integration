@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="3" tests="10" time="1.48609">
+<testcase classname="Mantenimiento de Factura" name="Registrar Factura" time="0.915405">
+<system-out><![CDATA[Given despues de iniciar sesion en la aplicacion............................passed
+When hago clic en el enlace de Facturas.....................................passed
+And luego hago clic en el boton de Registro.................................passed
+And en la nueva pantalla escribo en campo codigo el valor de "1234".........passed
+And en la nueva pantalla escribo en campo fecha facturacion el valor de "2018-09-26".passed
+And en la nueva pantalla escribo en campo fecha vencimiento el valor de "2018-10-26".passed
+And en la nueva pantalla escribo en campo moneda el valor de "soles"........passed
+And en la nueva pantalla escribo en campo precio el valor de "1000".........passed
+And en la nueva pantalla escribo en campo proveedorId el valor de "1".......passed
+And presiono el boton de Guardar............................................passed
+Then el sistema me muestra el mensaje de "Se registro correctamente la Factura".passed
+]]></system-out>
+</testcase>
+<testcase classname="Mantenimiento de Factura" name="Actualizar Factura" time="0.133874">
+<system-out><![CDATA[Given despues de iniciar sesion en la aplicacion............................passed
+When hago clic en el enlace de Facturas.....................................passed
+And busco la factura de codigo "1234" para seleccionarla....................passed
+And luego hago clic en el boton de Editar...................................passed
+And en la nueva pantalla escribo en campo codigo el valor de "4321".........passed
+And en la nueva pantalla escribo en campo fecha facturacion el valor de "2018-09-28".passed
+And en la nueva pantalla escribo en campo fecha vencimiento el valor de "2018-10-28".passed
+And en la nueva pantalla escribo en campo moneda el valor de "dolares"......passed
+And en la nueva pantalla escribo en campo precio el valor de "2000".........passed
+And en la nueva pantalla escribo en campo proveedorId el valor de "2".......passed
+And presiono el boton de Guardar............................................passed
+Then el sistema me muestra el mensaje de "Se actualizo correctamente la Factura".passed
+]]></system-out>
+</testcase>
+<testcase classname="Mantenimiento de Factura" name="Actualizar FacturaID" time="0.08712">
+<system-out><![CDATA[Given despues de iniciar sesion en la aplicacion............................passed
+When hago clic en el enlace de Facturas.....................................passed
+And busco la factura de id "1" para seleccionarla...........................passed
+And luego hago clic en el boton de Editar...................................passed
+And en la nueva pantalla escribo en campo codigo el valor de "4321".........passed
+And en la nueva pantalla escribo en campo fecha facturacion el valor de "2018-09-28".passed
+And en la nueva pantalla escribo en campo fecha vencimiento el valor de "2018-10-28".passed
+And en la nueva pantalla escribo en campo moneda el valor de "dolares"......passed
+And en la nueva pantalla escribo en campo precio el valor de "2000".........passed
+And en la nueva pantalla escribo en campo proveedorId el valor de "2".......passed
+And presiono el boton de Guardar............................................passed
+Then el sistema me muestra el mensaje de "Se actualizo correctamente la Factura".passed
+]]></system-out>
+</testcase>
+<testcase classname="Mantenimiento de Factura" name="Listar Factura" time="0.031077">
+<system-out><![CDATA[Given despues de iniciar sesion en la aplicacion............................passed
+When hago clic en el enlace de Facturas.....................................passed
+Then la nueva pantalla muestra la lista de facturas.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Mantenimiento de Factura" name="Eliminar Factura" time="0.09878">
+<system-out><![CDATA[Given despues de iniciar sesion en la aplicacion............................passed
+When hago clic en el enlace de Facturas.....................................passed
+Then la nueva pantalla muestra la lista de facturas.........................passed
+When hago clic en el boton de Eliminar de la factura con el id "1"..........passed
+Then el sistema muestra el mensaje de "Se elimino la Factura"...............passed
+]]></system-out>
+</testcase>
+<testcase classname="Mantenimiento de Proveedor" name="Registrar Proveedor" time="0.125773">
+<skipped><![CDATA[Given luego de iniciar sesion en la aplicacion..............................passed
+When hago clic en el enlace de Proveedores..................................passed
+And luego hago click en el boton de Registro................................passed
+And en la nueva pantalla escribo en campo nombre el valor de "Petro Peru"...passed
+And hago click en el boton de Guardar.......................................passed
+Then el sistema me muestra un mensaje de "Se registro correctamente el Proveedor".undefined
+]]></skipped>
+</testcase>
+<testcase classname="Mantenimiento de Proveedor" name="Actualizar Proveedor" time="0.014895">
+<skipped><![CDATA[Given luego de iniciar sesion en la aplicacion..............................passed
+When hago clic en el enlace de Proveedores..................................passed
+And busco el Proveedor de nombre "Petro Peru" para seleccionarlo............passed
+And luego hago click en el boton de Editar..................................passed
+And en la nueva pantalla escribo en campo nombre el valor de "Petro Peru SAC".passed
+And hago click en el boton de Guardar.......................................passed
+Then el sistema me muestra un mensaje de "Se actualizo correctamente el Proveedor".undefined
+]]></skipped>
+</testcase>
+<testcase classname="Mantenimiento de Proveedor" name="Actualizar ProveedorId" time="0.023874">
+<skipped><![CDATA[Given luego de iniciar sesion en la aplicacion..............................passed
+When hago clic en el enlace de Proveedores..................................passed
+And busco el Proveedor de id "1" para seleccionarlo.........................passed
+And luego hago click en el boton de Editar..................................passed
+And en la nueva pantalla escribo en campo nombre el valor de "Petro Peru SAC".passed
+And hago click en el boton de Guardar.......................................passed
+Then el sistema me muestra un mensaje de "Se actualizo correctamente el Proveedor".undefined
+]]></skipped>
+</testcase>
+<testcase classname="Mantenimiento de Proveedor" name="Listar Proveedor" time="0.00655">
+<system-out><![CDATA[Given luego de iniciar sesion en la aplicacion..............................passed
+When hago clic en el enlace de Proveedores..................................passed
+Then la nueva pantalla muestra la lista de Proveedores......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Mantenimiento de Proveedor" name="Eliminar Proveedor" time="0.048742">
+<system-out><![CDATA[Given luego de iniciar sesion en la aplicacion..............................passed
+When hago clic en el enlace de Proveedores..................................passed
+Then la nueva pantalla muestra la lista de Proveedores......................passed
+When hago clic en el boton de Eliminar el Proveedor con el id "1"...........passed
+Then el sistema muestra un mensaje de "Se elimino el Proveedor".............passed
+]]></system-out>
+</testcase>
+</testsuite>

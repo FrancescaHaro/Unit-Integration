@@ -1,0 +1,7 @@
+lets\develop\BpzCore\Business\FacturaBusiness.class
+lets\develop\BpzCore\entity\Proveedor.class
+lets\develop\BpzCore\util\Conexion.class
+lets\develop\BpzCore\Business\ProveedorBusiness.class
+lets\develop\BpzCore\Dao\FacturaDao.class
+lets\develop\BpzCore\Dao\ProovedorDao.class
+lets\develop\BpzCore\entity\Factura.class
